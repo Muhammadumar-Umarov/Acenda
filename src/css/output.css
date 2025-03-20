@@ -171,23 +171,11 @@
   }
 }
 @layer utilities {
-  .absolute {
-    position: absolute;
-  }
   .fixed {
     position: fixed;
   }
-  .relative {
-    position: relative;
-  }
-  .bottom-\[-20\%\] {
-    bottom: -20%;
-  }
   .z-10 {
     z-index: 10;
-  }
-  .z-20 {
-    z-index: 20;
   }
   .container {
     width: 100%;
@@ -210,26 +198,20 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-\[552p\] {
-    margin-top: 552p;
-  }
-  .mt-\[552px\] {
-    margin-top: 552px;
-  }
   .flex {
     display: flex;
   }
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
   .h-\[736px\] {
     height: 736px;
-  }
-  .h-full {
-    height: 100%;
   }
   .w-full {
     width: 100%;
@@ -365,9 +347,94 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .max-\[1440px\]\:text-\[28px\] {
+    @media (width < 1440px) {
+      font-size: 28px;
+    }
+  }
+  .max-\[1440px\]\:text-\[55px\] {
+    @media (width < 1440px) {
+      font-size: 55px;
+    }
+  }
   .max-\[1220px\]\:gap-\[55px\] {
     @media (width < 1220px) {
       gap: 55px;
+    }
+  }
+  .max-\[1024px\]\:gap-\[4px\] {
+    @media (width < 1024px) {
+      gap: 4px;
+    }
+  }
+  .max-\[1024px\]\:gap-\[10px\] {
+    @media (width < 1024px) {
+      gap: 10px;
+    }
+  }
+  .max-\[1024px\]\:gap-\[16\] {
+    @media (width < 1024px) {
+      gap: 16;
+    }
+  }
+  .max-\[1024px\]\:gap-\[16px\] {
+    @media (width < 1024px) {
+      gap: 16px;
+    }
+  }
+  .max-\[1024px\]\:gap-\[42px\] {
+    @media (width < 1024px) {
+      gap: 42px;
+    }
+  }
+  .max-\[1024px\]\:gap-\[44px\] {
+    @media (width < 1024px) {
+      gap: 44px;
+    }
+  }
+  .max-\[1024px\]\:p-\[13p\] {
+    @media (width < 1024px) {
+      padding: 13p;
+    }
+  }
+  .max-\[1024px\]\:p-\[13px\] {
+    @media (width < 1024px) {
+      padding: 13px;
+    }
+  }
+  .max-\[1024px\]\:p-\[34px\] {
+    @media (width < 1024px) {
+      padding: 34px;
+    }
+  }
+  .max-\[1024px\]\:pl-\[20px\] {
+    @media (width < 1024px) {
+      padding-left: 20px;
+    }
+  }
+  .max-\[1024px\]\:text-\[14px\] {
+    @media (width < 1024px) {
+      font-size: 14px;
+    }
+  }
+  .max-\[990px\]\:text-\[48px\] {
+    @media (width < 990px) {
+      font-size: 48px;
+    }
+  }
+  .max-\[910px\]\:p-\[9px\] {
+    @media (width < 910px) {
+      padding: 9px;
+    }
+  }
+  .max-\[910px\]\:p-\[p9px\] {
+    @media (width < 910px) {
+      padding: p9px;
+    }
+  }
+  .max-\[910px\]\:p-\[p\] {
+    @media (width < 910px) {
+      padding: p;
     }
   }
   .max-\[900px\]\:gap-\[40px\] {
@@ -375,9 +442,66 @@
       gap: 40px;
     }
   }
+  .max-\[876px\]\:flex {
+    @media (width < 876px) {
+      display: flex;
+    }
+  }
+  .max-\[876px\]\:hidden {
+    @media (width < 876px) {
+      display: none;
+    }
+  }
+  .max-\[876px\]\:flex-0 {
+    @media (width < 876px) {
+      flex: 0;
+    }
+  }
+  .max-\[876px\]\:flex-1 {
+    @media (width < 876px) {
+      flex: 1;
+    }
+  }
+  .max-\[876px\]\:grid-cols-2 {
+    @media (width < 876px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .max-\[876px\]\:justify-between {
+    @media (width < 876px) {
+      justify-content: space-between;
+    }
+  }
+  .max-\[876px\]\:justify-center {
+    @media (width < 876px) {
+      justify-content: center;
+    }
+  }
+  .max-\[876px\]\:border {
+    @media (width < 876px) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .max-\[876px\]\:border-none {
+    @media (width < 876px) {
+      --tw-border-style: none;
+      border-style: none;
+    }
+  }
   .max-\[768px\]\:gap-\[30px\] {
     @media (width < 768px) {
       gap: 30px;
+    }
+  }
+  .max-\[768px\]\:py-\[30px\] {
+    @media (width < 768px) {
+      padding-block: 30px;
+    }
+  }
+  .max-\[768px\]\:py-\[34px\] {
+    @media (width < 768px) {
+      padding-block: 34px;
     }
   }
   .max-\[768px\]\:text-\[15px\] {
@@ -385,9 +509,136 @@
       font-size: 15px;
     }
   }
+  .max-\[600px\]\:flex {
+    @media (width < 600px) {
+      display: flex;
+    }
+  }
   .max-\[600px\]\:hidden {
     @media (width < 600px) {
       display: none;
+    }
+  }
+  .max-\[520px\]\:gap-\[22p\] {
+    @media (width < 520px) {
+      gap: 22p;
+    }
+  }
+  .max-\[520px\]\:gap-\[22px\] {
+    @media (width < 520px) {
+      gap: 22px;
+    }
+  }
+  .max-\[520px\]\:gap-\[22pz\] {
+    @media (width < 520px) {
+      gap: 22pz;
+    }
+  }
+  .max-\[520px\]\:p-\[2px\] {
+    @media (width < 520px) {
+      padding: 2px;
+    }
+  }
+  .max-\[520px\]\:p-\[20px\] {
+    @media (width < 520px) {
+      padding: 20px;
+    }
+  }
+  .max-\[520px\]\:p-\[22px\] {
+    @media (width < 520px) {
+      padding: 22px;
+    }
+  }
+  .max-\[520px\]\:p-\[24px\] {
+    @media (width < 520px) {
+      padding: 24px;
+    }
+  }
+  .max-\[520px\]\:py-\[24px\] {
+    @media (width < 520px) {
+      padding-block: 24px;
+    }
+  }
+  .max-\[520px\]\:text-\[24px\] {
+    @media (width < 520px) {
+      font-size: 24px;
+    }
+  }
+  .max-\[520px\]\:text-\[42px\] {
+    @media (width < 520px) {
+      font-size: 42px;
+    }
+  }
+  .max-\[520px\]\:text-\[2x4\] {
+    @media (width < 520px) {
+      color: 2x4;
+    }
+  }
+  .max-\[520px\]\:text-\[23\] {
+    @media (width < 520px) {
+      color: 23;
+    }
+  }
+  .max-\[520px\]\:text-\[42\] {
+    @media (width < 520px) {
+      color: 42;
+    }
+  }
+  .max-\[475px\]\:mx-auto {
+    @media (width < 475px) {
+      margin-inline: auto;
+    }
+  }
+  .max-\[475px\]\:flex {
+    @media (width < 475px) {
+      display: flex;
+    }
+  }
+  .max-\[475px\]\:w-\[fl\] {
+    @media (width < 475px) {
+      width: fl;
+    }
+  }
+  .max-\[475px\]\:w-full {
+    @media (width < 475px) {
+      width: 100%;
+    }
+  }
+  .max-\[475px\]\:flex-0 {
+    @media (width < 475px) {
+      flex: 0;
+    }
+  }
+  .max-\[475px\]\:flex-2 {
+    @media (width < 475px) {
+      flex: 2;
+    }
+  }
+  .max-\[475px\]\:flex-10 {
+    @media (width < 475px) {
+      flex: 10;
+    }
+  }
+  .max-\[475px\]\:grid-cols-1 {
+    @media (width < 475px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .max-\[475px\]\:grid-cols-2 {
+    @media (width < 475px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .max-\[475px\]\:border {
+    @media (width < 475px) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .max-\[475px\]\:border-none {
+    @media (width < 475px) {
+      --tw-border-style: none;
+      border-style: none;
     }
   }
 }

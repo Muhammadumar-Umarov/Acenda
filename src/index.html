@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/output.css">
 </head>
 <body class="font-[poppins400]">
-    <header class="fixed z-10  w-full py-[40px]">
+    <header class="fixed z-10  w-full py-[40px] max-[768px]:py-[30px] max-[520px]:py-[24px]">
         <div class="container mx-auto flex justify-between">
             <div>
                 <img src="./images/logo.svg" alt="">
@@ -20,8 +20,10 @@
                     <li><a class="text-white max-[768px]:text-[15px]" href="#"><span>News</span></a></li>
                     <li><a class="text-white max-[768px]:text-[15px]" href="#"><span>Contact</span></a></li>
                 </ul>
-                <div>
-
+                <div class="hidden max-[600px]:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 50 50" style="fill:#FFFFFF;">
+                        <path d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"></path>
+                    </svg>
                 </div>
             </nav>
         </div>
@@ -31,55 +33,52 @@
     <main>
         <section class="bg-[url(../images/hero.png)] bg-no-repeat bg-cover h-[736px]">
             <div class="container mx-auto pt-[552px]">
-                <div class="w-full bg-white rounded-[32px] flex flex-col gap-[48px] p-[40px] shadow-xl">
+                <div class="w-full bg-white rounded-[32px] flex flex-col gap-[48px] p-[40px] shadow-xl max-[1024px]:p-[34px] max-[1024px]:gap-[42px] max-[520px]:p-[22px] max-[520px]:gap-[22px]">
                     <div>
-                        <p class="text-[60px] font-[poppins600] text-[#008EC4]">Good Morning!</p>
-                        <p class="text-[32px] text-[1A1A1A] ">Explore beautiful places in the world with Acenda</p>
+                        <p class="text-[60px] font-[poppins600] text-[#008EC4] max-[1440px]:text-[55px] max-[990px]:text-[48px] max-[520px]:text-[42px]">Good Morning!</p>
+                        <p class="text-[32px] text-[1A1A1A] max-[1440px]:text-[28px] max-[520px]:text-[24px]">Explore beautiful places in the world with Acenda</p>
                     </div>
-                    <div class="grid grid-cols-4 gap-[20px] border border-[#D9D9D9] rounded-[72px] pl-[24px] pr-[12px] py-[12px]">
-                        <div class="flex items-center gap-[12px]">
+
+                    <div class="grid grid-cols-4 gap-[20px] border border-[#D9D9D9] rounded-[72px] pl-[24px] pr-[12px] py-[12px] max-[1024px]:pl-[20px] max-[1024px]:gap-[16px] max-[876px]:grid-cols-2 max-[475px]:grid-cols-1">
+                        <div class="flex items-center gap-[12px] max-[475px]:mx-auto">
                             <div>
                                 <img src="./images/location.svg" alt="">
                             </div>
-                            <div class=" border-r border-[#D8D8D8] flex-1">
-                                <p class="font-[poppins600] leading-[20px]">Location</p>
-                                <p class="text-[#8C8C8C] ">Add destination</p>
+                            <div class=" border-r border-[#D8D8D8] flex-1 max-[475px]:border-none">
+                                <p class="font-[poppins600] leading-[20px] max-[1024px]:text-[14px]">Location</p>
+                                <p class="text-[#8C8C8C] max-[1024px]:text-[14px]">Add destination</p>
                             </div>
                         </div>
-                         
-                        <div class="flex items-center gap-[12px]">
+                        <div class="flex items-center gap-[12px] max-[475px]:mx-auto">
                             <div>
                                 <img src="./images/calendar.svg" alt="">
                             </div>
-                            <div class=" border-r border-[#D8D8D8] flex-1">
-                                <p class="font-[poppins600] leading-[20px]">Check in</p>
-                                <p class="text-[#8C8C8C] ">Add dates</p>
+                            <div class=" border-r border-[#D8D8D8] flex-1 max-[876px]:border-none">
+                                <p class="font-[poppins600] leading-[20px] max-[1024px]:text-[14px]">Check in</p>
+                                <p class="text-[#8C8C8C] max-[1024px]:text-[14px]">Add dates</p>
                             </div>
                         </div>
-                         
-                        <div class="flex items-center gap-[12px]">
+                        <div class="flex items-center gap-[12px] max-[475px]:mx-auto">
                             <div>
                                 <img src="./images/calendar.svg" alt="">
                             </div>
-                            <div class=" border-r border-[#D8D8D8] flex-1">
-                                <p class="font-[poppins600] leading-[20px]">Check out</p>
-                                <p class="text-[#8C8C8C] ">Add dates</p>
+                            <div class=" border-r border-[#D8D8D8] flex-1 max-[475px]:border-none max-[475px]:mx-auto">
+                                <p class="font-[poppins600] leading-[20px] max-[1024px]:text-[14px]">Check out</p>
+                                <p class="text-[#8C8C8C] max-[1024px]:text-[14px]">Add dates</p>
                             </div>
                         </div>
-                         
-                        <div class="flex items-center gap-[12px]">
+                        <div class="flex items-center gap-[12px] max-[1024px]:gap-[10px] max-[475px]:mx-auto">
                             <div>
                                 <img src="./images/profile-2user.svg" alt="">
                             </div>
-                            <div class="flex-1">
-                                <p class="font-[poppins600] leading-[20px]">Location</p>
-                                <p class="text-[#8C8C8C] ">Add guests</p>
+                            <div class="max-[876px]:border-none flex-1">
+                                <p class="font-[poppins600] leading-[20px]  max-[1024px]:text-[14px]">Guests</p>
+                                <p class="text-[#8C8C8C] max-[1024px]:text-[14px]">Add guests</p>
                             </div>
-                            <div class="bg-[#008EC4] rounded-full p-[16px]">
+                            <div class="bg-[#008EC4] rounded-full p-[16px] max-[1024px]:p-[13px] max-[910px]:p-[9px] max-[876px]:hidden">
                                 <a href="#"><img src="./images/search-normal.svg" alt=""></a>
                             </div>
                         </div>
-                         
                         
                     </div>
                 </div>
@@ -88,3 +87,7 @@
     </main>
 </body>
 </html>
+
+<!-- 
+
+-->
