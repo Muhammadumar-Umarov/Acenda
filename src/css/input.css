@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "poppins400";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "poppins600";
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+@import "tailwindcss";
+
+.container{
+    max-width: 1120px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
