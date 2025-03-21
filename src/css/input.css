@@ -6,6 +6,11 @@
     font-family: "poppins600";
     src: url(../fonts/Poppins-Bold.ttf);
 }
+@font-face {
+    font-family: "poppins700";
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+
 @import "tailwindcss";
 
 .container{
